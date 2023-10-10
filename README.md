@@ -8,10 +8,6 @@
 4. [Non-Functional Requirements](#4-non-functional-requirements)
 5. [System Constraints](#5-system-constraints)
 6. [Assumptions and Dependencies](#6-assumptions-and-dependencies)
-7. [Use Case Diagrams and Flowcharts](#7-use-case-diagrams-and-flowcharts)
-8. [Appendices](#8-appendices)
-9. [Review and Approval](#9-review-and-approval)
-10. [Version History](#10-version-history)
 
 ### 1. Introduction
 The Software Requirements Specification (SRS) document outlines the requirements for the "Billing System - 3rd Party Services" project. This application is designed for the billing of third-party services, such as Disney Hotstar and Netflix, within a family mobile account.
@@ -31,8 +27,8 @@ The system allows for the creation of a customer account hierarchy for family mo
 ### 3. Functional Requirements
 | Requirement | Description | Software Requirements |
 |-------------|-------------|-----------------------|
-| 1. Create Customer Account Hierarchy | The system shall allow the creation of a customer account hierarchy for family mobile accounts, where 4 to 5 mobile services can be grouped under one billing account. | Backend: Spring Boot, Microservices |
-| 2. Add 3rd Party Services | The system shall support the addition of 3rd party services, such as Disney Hotstar and Netflix subscriptions, to billing accounts. Third-party API stubs shall be created to facilitate the addition of these services. | Backend: Spring Boot, Microservices |
+| 1. Create Customer Account Hierarchy | The system shall allow the creation of a customer account hierarchy for family mobile accounts, where 4 to 5 mobile services can be grouped under one billing account. | Frontend: Angular, Backend: Spring Boot, Microservices |
+| 2. Add 3rd Party Services | The system shall support the addition of 3rd party services, such as Disney Hotstar and Netflix subscriptions, to billing accounts. Third-party API stubs shall be created to facilitate the addition of these services. | Frontend: Angular, Backend: Spring Boot, Microservices |
 | 3. Bulk Invoice Processing | Every month, the system shall receive a bulk B2C invoice from third-party providers. The system shall process the invoice, generating individual invoices for users, and send them via email. | Backend: Spring Boot, Microservices, SQL Database |
 | 4. User Invoice Viewing | Users shall be able to view their invoices within the application. | Frontend: Angular, Backend: Spring Boot, Microservices |
 | 5. Payment Processing | Users shall be able to make payments for their total bills through the application. | Frontend: Angular, Backend: Spring Boot, Microservices, SQL Database |
@@ -54,23 +50,8 @@ The system allows for the creation of a customer account hierarchy for family mo
 
 ### 6. Assumptions and Dependencies
 - The system assumes the availability of third-party API stubs.
-- Dependencies include the timely receipt of bulk invoices from third-party providers.
-
-### 7. Use Case Diagrams and Flowcharts
-(Insert diagrams and flowcharts here if applicable)
-
-### 8. Appendices
-(Include any supplementary materials, glossaries, or reference documents here if needed)
-
-### 9. Review and Approval
-This SRS has been reviewed and approved by:
-
-- [SME Name]
-- [Additional Approver Names, if any]
-
-### 10. Version History
-(Version history is not applicable in this simplified document.)
+- Dependencies include the timely receipt of bulk invoices from third-party providers (stubs).
 
 ---
 
-This Software Requirements Specification (SRS) document outlines the requirements for the "Billing System - 3rd Party Services" project. It serves as a reference for the development team to ensure that the system is built to meet the specified functional and non-functional requirements.
+This Software Requirements Specification (SRS) document outlines the requirements for the "Billing System - 3rd Party Services" project. It serves as a reference for the development to ensure that the system is built to meet the specified functional and non-functional requirements.
